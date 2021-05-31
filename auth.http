@@ -1,0 +1,126 @@
+### test login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+"email": "pipo@test.fr",
+"password": "1234"
+}
+
+
+### Get Users
+
+GET http://localhost:3000/login
+
+### Get Promos
+
+GET http://localhost:3000/promos
+
+
+### ADD PROMOS
+
+POST http://localhost:3000/promo
+Content-Type: application/json
+
+{
+    "code":"test3",
+    "start_date":"2021-04-15",
+    "end_date":"2021-06-15",
+    "pourcent" : 10
+}
+
+### GET PROMOS BY CODE
+
+GET http://localhost:3000/promo/pascher33
+
+
+### MODIFY PROMO
+PUT http://localhost:3000/promo/pascher
+Content-Type: application/json
+
+{
+    "code":"pascher33",
+    "start_date":"2021-04-15",
+    "end_date":"2021-06-15",
+    "pourcent" : 80
+}
+
+### DELETE PROMO
+DELETE http://localhost:3000/promo/pascher33
+
+### Get Users
+GET http://localhost:3000/user/1
+
+GET http://localhost:3000/promos
+
+### Get orders
+
+GET http://localhost:3000/orders
+
+### Create orders
+
+POST http://localhost:3000/order
+Content-Type: application/json
+
+{
+    "start_subscribe": "2021-04-15",
+    "end_subscribe": "2021-05-15",
+    "amount": 29,
+    "points": 1,
+    "user_id" : 1
+    
+}
+
+GET http://localhost:3000/users
+
+### Get User By Id
+
+GET http://localhost:3000/user/1
+
+
+### MODIFY USER
+PUT http://localhost:3000/user/1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "email": "pipo@test.fr",
+    "password": "1234",
+    "last_name": "Dupont",
+    "first_name": "PIPOPRENOM",
+    "delivery_address": "5 rue Republique",
+    "invoice_address": "6 rue République",
+    "delivery_postcode": 11100,
+    "invoice_postcode": 74000,
+    "delivery_city": "NARBONNE",
+    "invoice_city": "VERSAILLES",
+    "status": true,
+    "points": 1,
+    "role": "user",
+    "vegan": true
+}
+
+
+### DELETE User
+DELETE http://localhost:3000/user/2
+
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "email": "popi@test.fr",
+    "password": "5678",
+    "last_name": "Dupont",
+    "first_name": "PRENOM DE MERDE",
+    "delivery_address": "5 rue Republique",
+    "invoice_address": "6 rue République",
+    "delivery_postcode": 11100,
+    "invoice_postcode": 74000,
+    "delivery_city": "NARBONNE",
+    "invoice_city": "VERSAILLES",
+    "status": true,
+    "points": 1,
+    "role": "user",
+    "vegan": true
+}
+
