@@ -1,17 +1,6 @@
 # projet-grainedefood-back
 
-    "user_id" integer NOT NULL REFERENCES "user" ("id"),
-    "promo_id" integer NOT NULL REFERENCES "promo" ("id")
+Projet réaliser dans le cadre de ma formation chez O'clock
 
-
-        created_at: {
-        type: DataTypes.DATE,
-        allowNull: false
-    },
-    updated_at: {
-        type: DataTypes.DATE,
-        allowNull: false
-    },
-
-
-        timestamps:true
+Back fait en 1 semaine sur un planning de projet Back-Front et documents techniques de 4 semaines
+Structure et algorithme pouvant être amélioré.
